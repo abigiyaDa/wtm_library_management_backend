@@ -3,4 +3,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def author_view(request):
-    return render(request,'author.html')
+    title = 'new title'
+    return render(request,'author.html', {'title':title})
